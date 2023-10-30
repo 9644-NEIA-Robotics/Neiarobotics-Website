@@ -1,0 +1,117 @@
+:root {
+    /* NEIA Branding Colors */
+    --dark-green: #434140;
+    --light-grey: #d4d3c9;
+    --innovate: #5f4776;
+    --smile: #eead3a;
+    --burst: #e94c27;
+    --spark: #c11e65;
+  }
+
+
+
+
+body {
+    font-family: 'Sen';
+    margin: 0;
+    padding: 0;
+}
+
+
+.background {
+    background-color: var(--light-grey);
+    position: fixed;
+    z-index: -10;
+    opacity: 0.25;
+}
+
+
+
+.top-bar {
+    background-color: var(--innovate);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.top-bar-link {
+    text-decoration: none;
+    color: white;
+    float: right;
+    padding: 0 5%;
+    height: 100%;
+    font-size: 200%;
+    
+}
+
+.top-bar-link:hover {
+    background-color: var(--spark);
+    color: white;
+}
+
+.top-bar-logo {
+    float: left;
+    padding: 0 0;
+}
+
+
+.top-bar-logo > img {
+    height: 30px;
+    width: 30px;
+}
+
+.section {
+    height: 800px;
+    text-align: center;
+    padding: 40px;
+    padding-top: 8%;
+    margin: 0 15%;
+}
+
+/* check if the screen is small, and if so, make the margins smaller */
+@media (max-width: 600px) {
+    .section {
+        margin: 0 5%;
+    }
+}
+
+
+.main-title {
+    font-size: 500%;
+    color: var(--innovate);
+    font-weight: 700;
+}
+
+.main-subtitle {
+    font-size: 200%;
+    color: var(--spark);
+    font-weight: 700;
+}
+
+
+
+.home-subsections {
+    /*make the grid centered, with some space on either side */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+#cell-typewriter {
+    background-color: var(--burst);
+    border-radius: 10px;
+}
+
+.typewriter-text {
+    margin: 2%;
+    text-align: left;
+    font-size: 400%;
+    color: white;
+}
+
+
+.typewriter {
+    
+    border-right: 2px solid white;
+    
+}
